@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Localidade</h1>
+    <h3>Informe se você é brasileiro ou americano</h3>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var pais = document.getElementById('pais');
+            var res = document.getElementById('res');
+
+            if(pais == 'brasileiro'){
+                res.innerHTML+='Você é brasileiro'
+            }else{
+                res.innerHTML+= 'Você é americano'
+            }
+        }
+    </script>
+</body>
+</html>
